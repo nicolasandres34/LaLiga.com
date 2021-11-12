@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Home</title>
+</head>
+
+<body>
+
+  <div class="indexTodo">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="logo-liga"
+          src="./imagenes/PikPng.com_atletico-de-madrid-escudo_4467712.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="pagActiv nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./partidos.html">Partidos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./posiciones.html">Clasificacion</a>
+          </li>          
+        </ul>       
+      
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/laliganegro.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Disfruta de las mejores noticias del mejor funtbol del mundo.</h5>
+          <p>Con nuestro sitio web te acercamos las noticias del futbol que mas te gusta a a tus manos!</p>
+          <a class="boton-noticias" href="./noticias.html">Mas Noticias Aqui</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/n1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block carImg2">
+          <h3>La mejor Real Sociedad del siglo XXI lidera LaLiga Santander más igualada</h3>
+          <p>El equipo de Imanol Alguacil se ha situado en lo más alto de la clasificación en el primer tercio del campeonato.</p>
+          <a class="boton-noticias" href="./noticias.html">Leer mas...</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/n3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption carImg3 d-md-block">
+          <h5>¿Cuánto sabes de LaLiga? Demuestra tus conocimientos!</h5>
+          <p>Pon a prueba tus conocimientos futbolísticos para saber si eres el que más sabe de LaLiga con este trivial.</p>
+          <a class="boton-noticias" href="./noticias.html">Participar!</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="card-group">
+    <div class="card">
+      <img src="./imagenes/n4.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-dark text-light">
+        <h5 class="card-title">La mejor Real Sociedad del siglo XXI lidera LaLiga Santander</h5>
+        <p class="card-text">La emoción de LaLiga Santander está servida de aquí a final de temporada.se ha situado en lo más alto de la clasificación en el primer tercio del campeonato.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <a class="boton-noticias" href="./noticias.html">Seguir Leyendo</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./imagenes/n5.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-dark text-light">
+        <h5 class="card-title">"Vamos a hacer una gran Liga y a pelear por pasar en Champions"</h5>
+        <p class="card-text">El delantero portugués fue elegido como mejor jugador de octubre del Atlético por la afición. "Me siento bien, estoy feliz y la lesión es pasado".</p>
+        <p class="card-text"><small class="text-muted">Last updated 5 hours ago</small></p>
+        <a class="boton-noticias" href="./noticias.html">Seguir Leyendo</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imagenes/n6.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-dark text-light">
+        <h5 class="card-title">Así invertirán los clubes los 2.100M€ del acuerdo con CVC</h5>
+        <p class="card-text">La inyección de capital está pendiente de la firma del contrato con los 38 clubes que sí aceptaron -rechazaron el acuerdo el Real Madrid, el Barcelona y el Athletic.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+        <a class="boton-noticias" href="./noticias.html">Seguir Leyendo</a>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contacto">
+    <div class="contenedor footerContent">
+        <div class="contactUs">
+            <h2 class="brand">La ligalive.net</h2>
+            <p>Vivimos el futbol.</p>
+            
+        </div>
+       
+        <div class="socialMedia">
+            <a href="./" class=" socialMediaIcon">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="./" class=" socialMediaIcon">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="./" class=" socialMediaIcon">
+                <i class='bx bx-mail-send'></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+</footer>
+
+
+</div>
+
+
+   
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+
+</body>
+
+</html>
