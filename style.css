@@ -15,11 +15,11 @@ body{
 
 
 .pagActiv{
-    border: blue solid 2px;
+    border-bottom: blue solid 2px;
 }
 
 .collapse a:hover{
-    border: blue solid 2px;
+    border-bottom: blue solid 2px;
 }
 
 /* BODY TARJETAS */
@@ -100,6 +100,88 @@ body{
     text-align: center;
     margin-bottom:18px ;
 }
+
+/* CLASIFICACION PAGE */
+
+.bodytabla2 tr:nth-of-type(1)>td:nth-of-type(11),
+.bodytabla2 tr:nth-of-type(2)>td:nth-of-type(11),
+.bodytabla2 tr:nth-of-type(3)>td:nth-of-type(11),
+.bodytabla2 tr:nth-of-type(4)>td:nth-of-type(11){
+    background-color: rgb(0, 180, 0);
+}
+
+.bodytabla2 tr:nth-of-type(5)>td:nth-of-type(11),
+.bodytabla2 tr:nth-of-type(6)>td:nth-of-type(11){
+    background-color: rgb(255, 230, 0);
+}
+
+.bodytabla2 tr:nth-of-type(7)>td:nth-of-type(11){
+    background-color: rgb(255, 136, 0);
+}
+
+.bodytabla2 tr:nth-of-type(18)>td:nth-of-type(11),
+.bodytabla2 tr:nth-of-type(19)>td:nth-of-type(11),
+.bodytabla2 tr:nth-of-type(20)>td:nth-of-type(11){
+    background-color: red;
+}
+
+.bodytabla2 tr:nth-of-type(1):hover{
+    color: rgb(0, 0, 0);
+    background-color: red;
+}
+
+
+.containerLeyendas{
+    background-image: linear-gradient(-225deg, #000000 0%, #3d3d3d 48%, #000000 100%);
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerLeyendas div{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;  
+    
+}
+
+.containerLeyendas div p{
+    font-size: 18px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.colors{
+    margin-right: 8px;
+    height: 30px;
+    width: 10px;
+}
+
+.container-p2{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(-225deg, #000000 0%, #3d3d3d 48%, #000000 100%);
+    border-radius: 30px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fila1, .fila2{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+.fila1 p, .fila2 p{
+    padding: 20px;
+    color: white;
+
+}
+
 
 /* FOOTER */
 

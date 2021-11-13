@@ -43,19 +43,7 @@ function getFetch() {
 
 getFetch()
 
-function datosFiltrados(partidos) {
-    let datoInput = document.getElementById("buscador").value
 
-    let arrayFiltrada = partidos.filter((p) => {
-        if (p.homeTeam.name.toLowerCase().includes(datoInput.toLowerCase()) || p.awayTeam.name.toLowerCase().includes(datoInput.toLowerCase())) {
-            return true;
-        } else {
-            return false;
-        }
-    })
-
-    tabla(arrayFiltrada)
-}
 
 
 function tabla(dePartidos) {
@@ -112,6 +100,20 @@ function tabla(dePartidos) {
 
     }
 
+}
+
+function datosFiltrados(partidos) {
+    let datoInput = document.getElementById("buscador").value
+
+    let arrayFiltrada = partidos.filter((p) => {
+        if (p.homeTeam.name.toLowerCase().includes(datoInput.toLowerCase()) || p.awayTeam.name.toLowerCase().includes(datoInput.toLowerCase())) {
+            return true;
+        } else {
+            return false;
+        }
+    })
+
+    tabla(arrayFiltrada)
 }
 
 function mostrarEspiner() {
