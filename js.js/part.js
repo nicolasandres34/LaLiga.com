@@ -43,9 +43,6 @@ function getFetch() {
 
 getFetch()
 
-
-
-
 function tabla(dePartidos) {
 
     let cuerpoTabla = document.getElementById("tbody")
@@ -80,14 +77,6 @@ function tabla(dePartidos) {
         let fecha = document.createElement("p")
         fecha.innerHTML = dePartidos[i].utcDate;
 
-
-        // console.log(nomEqLocal)
-        // console.log(nomEqVisita)
-        // console.log(resultados)
-        // console.log(jornada)
-        // console.log(fecha)
-
-
         let datosPartido = [jornada, imgEqLocal, nomEqLocal, resultados, nomEqVisita, imgEqVisita, fecha]
 
         for (let x = 0; x < datosPartido.length; x++) {
@@ -95,12 +84,10 @@ function tabla(dePartidos) {
             td.append(datosPartido[x]);
             tr.appendChild(td)
         }
-
         cuerpoTabla.appendChild(tr)
-
     }
-
 }
+
 
 function datosFiltrados(partidos) {
     let datoInput = document.getElementById("buscador").value
