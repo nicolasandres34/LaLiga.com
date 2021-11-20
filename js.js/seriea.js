@@ -1,4 +1,6 @@
-function getFetch(url) {
+function getFetch() {
+
+    const url = "https://api.football-data.org/v2/competitions/2019/matches"
 
     mostrarEspiner()
 
@@ -15,7 +17,7 @@ function getFetch(url) {
         }
 
     }).then(data => {
-        console.log(data)
+        //  console.log(data)
 
         quitarEspiner()
 
@@ -27,8 +29,8 @@ function getFetch(url) {
         let buscar = document.getElementById("buscador")
         buscar.addEventListener("keyup", () => {
 
-            // let tablaDePartidos = document.getElementById("tbody")
-            // tablaDePartidos.innerHTML = ""
+            let tablaDePartidos = document.getElementById("tbody")
+            tablaDePartidos.innerHTML = ""
 
             datosFiltrados(partidos)
 
@@ -40,36 +42,11 @@ function getFetch(url) {
 
 }
 
-getFetch("https://api.football-data.org/v2/competitions/2014/matches")
-
-let premier = document.getElementById("premier")
-premier.addEventListener("click", () => {
-
-    getFetch("https://api.football-data.org/v2/competitions/2021/matches")
-})
-
-
-let ligue = document.getElementById("ligue")
-ligue.addEventListener("click", () => {
-
-    getFetch("https://api.football-data.org/v2/competitions/2015/matches")
-})
-
-let bundes = document.getElementById("bundes")
-bundes.addEventListener("click", () => {
-
-    getFetch("https://api.football-data.org/v2/competitions/2002/matches")
-})
-let serie = document.getElementById("serie")
-serie.addEventListener("click", () => {
-
-    getFetch("https://api.football-data.org/v2/competitions/2019/matches")
-})
+getFetch()
 
 function tabla(dePartidos) {
 
-    let cuerpoTabla = document.getElementById("tbody");
-    limpiarTabla();
+    let cuerpoTabla = document.getElementById("tbody")
 
     for (let i = 0; i < dePartidos.length; i++) {
         const tr = document.createElement("tr")
@@ -131,10 +108,6 @@ function mostrarEspiner() {
     document.getElementById("spinner").style.visibility = "visible";
 }
 
-function quitarEspiner() {
+function quitarEspiner(){
     document.getElementById("spinner").style.display = "none";
-}
-
-function limpiarTabla() {
-    document.getElementById("tbody").innerText = "";
 }
